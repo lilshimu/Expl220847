@@ -10,7 +10,6 @@
 
 
 int create_pipe(int fd[2]) { 
-    // fd[0] - для чтения fd[1] - для записи
     if (pipe(fd) == -1){
         perror("pipe");
         return -1;
